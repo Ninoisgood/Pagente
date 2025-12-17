@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Niño G. Pagente | Digital Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+    <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
+    Chatbot.init({
+        chatflowid: "06ab5077-6744-4d72-93cf-d1978bd9e87d",
+        apiHost: "https://cloud.flowiseai.com",
+    })
+</script>
+    <!-- Navigation Component -->
+    <custom-navbar></custom-navbar>
+    <script src="components/navbar.js"></script>
+
+    <!-- Hero Section -->
+    <header class="relative bg-gradient-to-r from-primary to-secondary py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjEpIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+')]"></div>
+        </div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="w-36 h-36 mx-auto mb-6 rounded-full border-4 border-white shadow-lg overflow-hidden">
+                <img src="pagente.png" alt="Profile Photo" class="w-full h-full object-cover">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-3">Chris Niño G. Pagente</h1>
+            <p class="text-xl text-white opacity-90 mb-6">IT Student | Web Developer</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#projects" class="px-6 py-2 bg-white text-primary rounded-full font-medium hover:bg-gray-100 transition duration-300 flex items-center">
+                    <i data-feather="briefcase" class="mr-2 w-4 h-4"></i> View Work
+                </a>
+                <a href="#contact" class="px-6 py-2 border-2 border-white text-white rounded-full font-medium hover:bg-white hover:text-primary transition duration-300 flex items-center">
+                    <i data-feather="mail" class="mr-2 w-4 h-4"></i> Contact Me
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 to-transparent"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- About Section -->
+        <section id="about" class="mb-20">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800 relative inline-block">
+                    <span class="relative">
+                        About Me
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-secondary transform translate-y-1"></span>
+                    </span>
+                </h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    I am a student at the University of Cebu, passionately pursuing knowledge in Information Technology. My journey is driven by a deep curiosity for web development and a commitment to solving real-world problems through technology. I thrive in collaborative environments where I can both contribute and learn from experienced professionals.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mt-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary mb-4">
+                        <i data-feather="book" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Education</h3>
+                    <p class="text-gray-600">
+                        Currently pursuing my degree in Information Technology at University of Cebu, with a focus on web development and database systems.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary mb-4">
+                        <i data-feather="target" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Goals</h3>
+                    <p class="text-gray-600">
+                        To develop innovative web solutions that enhance user experience while continuously expanding my technical skillset and professional network.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-primary mb-4">
+                        <i data-feather="heart" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Passions</h3>
+                    <p class="text-gray-600">
+                        Clean code, intuitive UI/UX design, and the endless possibilities of web technologies to transform ideas into functional digital experiences.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-20">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800 relative inline-block">
+                    <span class="relative">
+                        Technical Skills
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-secondary transform translate-y-1"></span>
+                    </span>
+                </h2>
+                <p class="text-lg text-gray-600">
+                    A collection of technologies I've worked with and continue to develop expertise in.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                    <i data-feather="code" class="w-8 h-8 text-primary mb-2"></i>
+                    <h3 class="font-medium">HTML5</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                        <div class="bg-primary h-2 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                    <i data-feather="layout" class="w-8 h-8 text-primary mb-2"></i>
+                    <h3 class="font-medium">CSS3</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                        <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                    <i data-feather="cpu" class="w-8 h-8 text-primary mb-2"></i>
+                    <h3 class="font-medium">JavaScript</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                        <div class="bg-primary h-2 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                    <i data-feather="database" class="w-8 h-8 text-primary mb-2"></i>
+                    <h3 class="font-medium">MySQL</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                        <div class="bg-primary h-2 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                    <i data-feather="server" class="w-8 h-8 text-primary mb-2"></i>
+                    <h3 class="font-medium">PHP</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                        <div class="bg-primary h-2 rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                    <i data-feather="git-merge" class="w-8 h-8 text-primary mb-2"></i>
+                    <h3 class="font-medium">Git</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                        <div class="bg-primary h-2 rounded-full" style="width: 65%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                    <i data-feather="terminal" class="w-8 h-8 text-primary mb-2"></i>
+                    <h3 class="font-medium">Bash</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                        <div class="bg-primary h-2 rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-card bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition duration-300 border-l-4 border-primary">
+                    <i data-feather="figma" class="w-8 h-8 text-primary mb-2"></i>
+                    <h3 class="font-medium">Figma</h3>
+                    <div class="w-full bg-gray-200 rounded-full h-2 mt-2">
+                        <div class="bg-primary h-2 rounded-full" style="width: 55%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-20">
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 text-gray-800 relative inline-block">
+                    <span class="relative">
+                        Featured Projects
+                        <span class="absolute bottom-0 left-0 w-full h-1 bg-secondary transform translate-y-1"></span>
+                    </span>
+                </h2>
+                <p class="text-lg text-gray-600">
+                    A selection of my recent work showcasing my technical abilities and problem-solving approach.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 bg-gradient-to-r from-primary to-secondary relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i data-feather="monitor" class="w-16 h-16 text-white opacity-90"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sit-In Management System</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive system for managing student seating arrangements and classroom utilization.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">PHP</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">MySQL</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Bootstrap</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline flex items-center">
+                            Learn more
+                            <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 bg-gradient-to-r from-primary to-secondary relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i data-feather="calendar" class="w-16 h-16 text-white opacity-90"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Reservation System</h3>
+                        <p class="text-gray-600 mb-4">An online platform for scheduling and managing facility reservations with real-time availability.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">Firebase</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">HTML5</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline flex items-center">
+                            Learn more
+                            <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="h-48 bg-gradient-to-r from-primary to-secondary relative">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <i data-feather="award" class="w-16 h-16 text-white opacity-90"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Reward System</h3>
+                        <p class="text-gray-600 mb-4">An incentive program application that tracks and rewards user achievements and milestones.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">PHP</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">jQuery</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full">CSS3</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium hover:underline flex items-center">
+                            Learn more
+                            <i data-feather="chevron-right" class="w-4 h-4 ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-20">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 bg-gradient-to-r from-primary to-secondary p-8 text-white">
+                            <h2 class="text-2xl font-bold mb-4">Get In Touch</h2>
+                            <p class="mb-6">
+                                Interested in collaborating or have questions about my work? Feel free to reach out—I'm always open to discussing new projects and opportunities.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i data-feather="mail" class="w-5 h-5 mt-1 mr-3"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Email</h4>
+                                        <p class="text-white opacity-90">Chrisninopagente1@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i data-feather="map-pin" class="w-5 h-5 mt-1 mr-3"></i>
+                                    <div>
+                                        <h4 class="font-semibold">Location</h4>
+                                        <p class="text-white opacity-90">University of Cebu, Philippines</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8">
+                            <form class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary-dark transition duration-300 font-medium flex items-center justify-center">
+                                    <i data-feather="send" class="w-4 h-4 mr-2"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component -->
+    <custom-footer></custom-footer>
+    <script src="components/footer.js"></script>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary-dark">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <script>
+        feather.replace();
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
